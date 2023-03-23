@@ -5,16 +5,19 @@
 */
 void more_numbers(void)
 {
-char c;
+int number;
 int i;
 for (i = 0; i < 10; i++)
 {
-for (c = '0'; c <= '14'; c++)
+for (number = 0; number <= 14; number++)
 {
-	_putchar(c);
+	if (number >= 10)
+	{
+	_putchar(1);
+	_putchar(number % 10);
+	}
 
 }
 _putchar('\n');
 }
-_putchar('\n');
 }
