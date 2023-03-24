@@ -10,8 +10,20 @@
 
 int largest_number(int a, int b, int c)
 {
-int left_max = max(a, b);
-int right_max = max(c, d);
-int final_max = max(left_max, right_max);
-return (final_max);
+int largest;
+
+if (a >= b && a >= c)
+{
+largest = a;
+}
+else if (b >= a && b >= c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+
+return (largest);
 }
