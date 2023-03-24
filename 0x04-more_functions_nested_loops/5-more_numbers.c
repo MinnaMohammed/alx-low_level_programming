@@ -15,6 +15,10 @@ for (number = 0; number <= 14; number++)
 	_putchar('1');
 	_putchar(number % 10 + '0');
 	}
+	else
+	{
+	_putchar(number);
+	}
 
 }
 _putchar('\n');
