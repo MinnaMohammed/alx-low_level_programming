@@ -17,7 +17,7 @@ for (number = 0; number <= 14; number++)
 	}
 	else
 	{
-	_putchar(number);
+	_putchar(number % 10);
 	}
 
 }
