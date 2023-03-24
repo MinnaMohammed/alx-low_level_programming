@@ -55,18 +55,8 @@ int main(void)
 	putchar('r');
 	putchar(',');
 	putchar(' ');
-	putchar('2');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
-	putchar('');
+	putchar(2 + '0');
+	putchar(0 + '0');
+	putchar(1 + '0');
 return (1);
 }
