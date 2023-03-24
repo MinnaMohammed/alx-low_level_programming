@@ -21,6 +21,10 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
+		else if (i == 1)
+		{
+			printf("%d ", 1);
+		}
 		else
 		{
 			printf("%d ", i);
