@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int i;
-	char *newstring;
+	char *newstring = " ";
 
 	strcpy(s, newstring);
 
