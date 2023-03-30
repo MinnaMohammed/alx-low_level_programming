@@ -19,7 +19,6 @@ char *_strcat(char *dest, char *src)
 	{
 		if (dest[i] == length_of_dest + 1)
 		{
-			dest[i] =(char *) " ";
 			continue;
 		}
 		dest[i] = src[j];
