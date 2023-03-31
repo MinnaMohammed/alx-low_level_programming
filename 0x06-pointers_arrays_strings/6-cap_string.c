@@ -15,9 +15,9 @@ char *cap_string(char *str)
 
 	for (i = 0; i < length; i++)
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'z')
+		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			if (isspace(str[i]))
+			if (str[i] == '\n')
 			{
 				str[i + 1] = str[i + 1] - 32;
 			}
