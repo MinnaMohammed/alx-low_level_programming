@@ -19,16 +19,27 @@ char *cap_string(char *str)
 		str[0] = str[0] - 32;
 		}
 
-		if (str[i] == ' ' || str[i] == '.' || str[i] == '\t')
+		if (str[i] == ' ' || str[i] == '.' || str[i] == ',' || str[i] == ';')
 		{
 		if (str[i + 1] >= 97 && str[i + 1] <= 122)
 		{
 			str[i + 1] = str[i + 1] - 32;
 		}
 		}
-		else if (str[i] == '\n')
+		else if (str[i] == '\n' || str[i] == '\t' || str == '!' || str[i] == '?')
 		{
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
 			str[i + 1] = str[i + 1] - 32;
+			}
+		}
+		else if (str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{')
+		{
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
+			str[i + 1] = str[i + 1] - 32;
+			}
+
 		}
 		i++;
 	}
