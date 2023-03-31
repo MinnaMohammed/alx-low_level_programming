@@ -9,7 +9,7 @@
  *Letters t and T should be replaced by 7
  *Letters l and L should be replaced by 1
  *
- *@str: pointer to the input string. 
+ *@str: pointer to the input string.
  * Return: pointer to the  reult string (str).
 */
 char *leet(char *str)
@@ -20,7 +20,7 @@ char *leet(char *str)
 
 	char array[10] = {'A', 'a', 'E', 'e', 'O', 'o', 'T', 't', 'L', 'l'};
 
-	char array2[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'}; 
+	char array2[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 	for (i = 0; i < length; i++)
 	{
