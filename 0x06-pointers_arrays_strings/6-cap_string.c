@@ -14,9 +14,12 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
+		if (isspace(str[i]))
+		{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
+		}
 		}
 		i++;
 	}
