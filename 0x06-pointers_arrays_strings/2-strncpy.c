@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 /**
  * _strncpy -  copies a string.
@@ -19,6 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		}
 	}
+	dest[i] = '\0';
 
 	return (dest);
 }
