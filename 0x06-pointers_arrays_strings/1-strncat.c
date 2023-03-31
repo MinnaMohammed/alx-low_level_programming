@@ -15,8 +15,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int length_of_dest = strlen(dest);
 
-	int length_of_src = strlen(src);
-
 	int i, j = 0;
 
 	for (i = length_of_dest; i < length_of_dest + n + 1; i++)
