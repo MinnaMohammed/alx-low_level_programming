@@ -15,13 +15,8 @@ char *_strcat(char *dest, char *src)
 
 	int i, j = 0;
 
-	for (i = length_of_dest + 1; i < length_of_dest + length_of_src + 2; i++)
+	for (i = length_of_dest + 1; i < length_of_dest + length_of_src + 1; i++)
 	{
-		if (dest[i] == length_of_dest + 1)
-		{
-			dest[i] = '\t';
-			continue;
-		}
 		dest[i] = src[j];
 		j++;
 	}
