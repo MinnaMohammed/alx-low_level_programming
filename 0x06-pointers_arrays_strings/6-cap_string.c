@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include "main.h"
 /**
  * cap_string - capitalizes all words of a string.
@@ -16,7 +17,7 @@ char *cap_string(char *str)
 	{
 		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'z')
 		{
-			if (str[i] == '' || str[i] == '\n')
+			if (isspace(str[i]))
 			{
 				str[i + 1] = str[i + 1] - 32;
 			}
