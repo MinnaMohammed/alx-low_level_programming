@@ -5,7 +5,8 @@
  * _strcmp - compares two strings.
  *@s1: first string.
  *@s2: second string.
- * Return: Always 0 (Success)
+ * Return: the ASCII difference between the letters where the 
+ * difference between the 2 strings first occured.
 */
 int _strcmp(char *s1, char *s2)
 {
