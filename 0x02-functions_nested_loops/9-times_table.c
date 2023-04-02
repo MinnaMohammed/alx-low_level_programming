@@ -20,6 +20,7 @@ void times_table(void)
 			else if ((i * j) > 9)
 			{
 				printf(", %d", (j * i));
+				continue;
 			}
 			printf(",  %d", (j * i));
 		}
