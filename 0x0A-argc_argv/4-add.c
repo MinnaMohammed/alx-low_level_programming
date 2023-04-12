@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	while (i < argc)
+	while (i < argc && argv[i][0] != '\0')
 	{
 		if (atoi(argv[i]) >= 0)
 		{
