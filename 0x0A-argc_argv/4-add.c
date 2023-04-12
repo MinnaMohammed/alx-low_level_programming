@@ -30,6 +30,11 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		else if (argv[i][0] > '9' || argv[i][0] < '0')
+		{
+			printf("Error\n");
+			return (1);
+		}
 		i++;
 	}
 
