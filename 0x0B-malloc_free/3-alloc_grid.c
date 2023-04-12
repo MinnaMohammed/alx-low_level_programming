@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	new_array = (int **)malloc((width * height) * sizeof(int));
+	new_array = (int **)malloc((width) * sizeof(int[height]));
 
 	if (new_array == NULL)
 	{
@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 	{
 		for (j = 0; j < height; j++)
 		{
-			*(new_array + i * height + j) = 0;
+			new_array[i][j] = 0;
 		}
 	}
 
