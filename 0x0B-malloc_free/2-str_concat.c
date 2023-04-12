@@ -39,14 +39,11 @@ char *str_concat(char *s1, char *s2)
 			new_string[i] = s1[i];
 			flag = 1;
 		}
-<<<<<<< HEAD
 		else if (flag == 1 && s2 != NULL)
 		{
 			new_string[i] = s2[j];
 			j++;
 		}
-=======
->>>>>>> db259fd3f1244775b09b65ae742ea3a4ae577ca4
 		else
 		{
 			break;
