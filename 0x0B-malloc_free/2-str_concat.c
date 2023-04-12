@@ -19,6 +19,8 @@ char *str_concat(char *s1, char *s2)
 
 	int i, j = 0;
 
+	bool flag = 0;
+
 	char *new_string;
 
 	new_string = malloc((length_of_s1 + length_of_s2 + 1) * sizeof(char));
@@ -28,26 +30,40 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; i < length_of_s1 + length_of_s2 + 1; i++)
+	if (s1 != NULL)
 	{
-		if (s1 != NULL)
-		{
+	for (i = 0; i < length_of_s1 + 1; i++)
+	{
 		if (i < length_of_s1)
 		{
 			new_string[i] = s1[i];
+			flag = 1;
 		}
-		if (s2 == NULL)
+		else if (flag == 1 && s2 != NULL)
 		{
-			break;
-		}
 			new_string[i] = s2[j];
 			j++;
 		}
 		else
 		{
-			new_string[i] = s2[j];
-			j++;
+			break;
 		}
+	}
+	}
+	else if (s2 != NULL)
+	{
+	for (i = 0; i < length_of_s2 + 1; i++)
+	{
+		if (i < length_of_s2)
+		{
+			new_string[i] = s2[i];
+		}
+	}
+	}
+	else
+	{
+		i = 0;
+		newstring[i] = ' ';
 	}
 	return (new_string);
 
