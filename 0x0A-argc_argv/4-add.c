@@ -20,10 +20,13 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if ((argv[i][0] >= 'a' && argv[i][0] <= 'z') || (argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
+		if ((argv[i][0] >= 'a' && argv[i][0] <= 'z'))
 		{
-			printf("Error\n");
-			return (1);
+			if ((argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		sum = sum + atoi(argv[i]);
 		i++;
