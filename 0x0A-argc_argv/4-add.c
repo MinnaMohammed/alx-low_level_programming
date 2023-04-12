@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - Entry point
  *@argc: number of argument entered by the command line.
@@ -24,9 +25,14 @@ int main(int argc, char *argv[])
 		{
 			if ((argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
 			{
-				printf("Error\n");
-				return (1);
+					printf("Error\n");
+					return (1);
 			}
+		}
+		if (!isdigit(argv[i][0]))
+		{
+			printf("Error\n");
+            		return (1);
 		}
 		sum = sum + atoi(argv[i]);
 		i++;
