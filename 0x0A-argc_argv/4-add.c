@@ -21,18 +21,26 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if ((argv[i][0] >= 'a' && argv[i][0] <= 'z'))
+		if (atoi(argv[i]) < 0)
 		{
-			if ((argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
-			{
-					printf("Error\n");
-					return (1);
-			}
+			sum = sum + atoi(argv[i]);
+			i++;
+			continue;
 		}
-		if (!isdigit(argv[i][0]))
+		else if ((argv[i][0] >= 'a' && argv[i][0] <= 'z'))
 		{
 			printf("Error\n");
-            		return (1);
+			return (1);
+		}
+		else if ((argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else if (!isdigit(argv[i][0]))
+		{
+			printf("Error\n");
+			return (1);
 		}
 		sum = sum + atoi(argv[i]);
 		i++;
