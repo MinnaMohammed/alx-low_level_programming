@@ -21,15 +21,15 @@ char *_strdup(char *str)
 
 	newString = malloc(strlen(str) * sizeof(char));
 
-	if (newstring == NULL)
+	if (newString == NULL)
 	{
 		return  (NULL);
 	}
 
 	for (int i = 0; i < strlen(str); i++)
 	{
-		newstring[i] = str[i];
+		newString[i] = str[i];
 	}
 
-	return (newstring);
+	return (newString);
 }
