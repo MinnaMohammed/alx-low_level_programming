@@ -27,16 +27,6 @@ int main(int argc, char *argv[])
 			i++;
 			continue;
 		}
-		else if ((argv[i][0] >= 'a' && argv[i][0] <= 'z'))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else if ((argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
-		{
-			printf("Error\n");
-			return (1);
-		}
 		else if (!isdigit(argv[i][0]))
 		{
 			printf("Error\n");
