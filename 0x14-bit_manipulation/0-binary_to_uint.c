@@ -31,6 +31,5 @@ unsigned int binary_to_uint(const char *b)
 			ans += (1 << idx);
 		idx++;
 	}
-
 	return (ans);
 }
