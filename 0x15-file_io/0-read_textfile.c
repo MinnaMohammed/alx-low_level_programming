@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fp = fopen(filename, "r");
 	if (!fp)
 		return (0);
-	ch = malloc(letters + 1);
+	ch = malloc(letters);
 	if (!ch)
 	{
 		fclose(fp);
