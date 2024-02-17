@@ -15,10 +15,12 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	
+
 	fptr = fopen(filename, "a");
 	if (!fptr)
+	{
 		return (-1);
+	}
 	else
 	{
 		if (!text_content)
