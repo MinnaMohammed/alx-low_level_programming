@@ -1,4 +1,6 @@
 #include "main.h"
+#include <fcntl.h>
+#include <errno.h>
 
 /**
  * main - main function.
@@ -20,7 +22,7 @@ int main(int argc, char *argv[])
 	fp_read = open(argv[1], O_RDONLY);
 	if (fp_read == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
@@ -44,5 +46,5 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-
+return (0);
 }
